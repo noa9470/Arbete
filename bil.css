@@ -1,0 +1,187 @@
+@charset "UTF-8";
+
+body {
+  position: absolute;
+}
+
+.spik {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 50px solid black;
+  margin-left: 850px;
+  margin-top: 20px;
+}
+
+.hål {
+  width: 300px;
+  height: 100px;
+  background-color: black;
+  display: block;
+  border-radius: 25%;
+  margin-left: 50px;
+  margin-top: -150px;
+  animation-name: mun;
+  position: relative;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.mun {
+  width: 450px;
+  height: 200px;
+  background-color: red;
+  margin-top: 50px;
+  display: block;
+  animation-name: mun;
+  position: relative;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  margin-left: -20px;
+  border-radius: 30%;
+}
+
+@keyframes mun {
+  0% {
+    left: 0px;
+    top: 0px;
+    transform: translateY(0px);
+  }
+
+  25% {
+    left: 700px;
+    top: 0px;
+    transform: translateY(-50px);
+  }
+
+  50% {
+    left: 1400px;
+    top: 0px;
+    transform: translateY(0px);
+  }
+
+  75% {
+    left: 700px;
+    top: 0px;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    left: 0px;
+    top: 0px;
+    transform: translateY(0px);
+  }
+}
+
+.kaross {
+  width: 450px;
+  height: 100px;
+  background-color: red;
+  margin-bottom: -50px;
+  display: block;
+  animation-name: karossen;
+  position: relative;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  margin-left: -20px;
+  margin-top: 200px;
+}
+
+@keyframes karossen {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+
+  50% {
+    left: 1400px;
+    top: 0px;
+  }
+
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.hjul {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  background-color: black;
+  display: inline-block;
+  animation-name: hjulen;
+  position: relative;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.hjul1 {
+  margin-left: 0px;
+}
+
+.hjul2 {
+  margin-left: 200px;
+}
+
+@keyframes hjulen {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+
+  50% {
+    left: 1400px;
+    top: 0px;
+  }
+
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.fälgdel1 {
+  height: 60px;
+  width: 20px;
+  background-color: silver;
+  margin-left: 40px;
+  margin-top: 20px;
+  border-radius: 10%;
+}
+
+.fälgdel2 {
+  height: 20px;
+  width: 60px;
+  background-color: silver;
+  margin-left: 20px;
+  margin-top: -40px;
+  border-radius: 10%;
+}
+
+.fälgar {
+  animation-name: rotate;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotatez(0deg);
+  }
+
+  100% {
+    transform: rotatez(360deg);
+  }
+}
